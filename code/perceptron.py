@@ -1,45 +1,4 @@
-## Perceptron definiton
-
- # - What is a perceptron
- # - How is used
- # - Math:
-
-## Decision or threshold function 
-    # f(x) = 
-        # 1 if w.T * x + b > 0
-        # 0 otherwise
-
-    ## where:
-        # x is a vector of reald-valued features
-        # w is a vector of real-valued weights
-        # w.T * x is the inner product 
-        # b is the bias term
-    
-## single-layer perceptron
-
-# y = f(x) -> output from the perceptron for a vector x
-# D = {(xj, yj),...,(xs, ys)} -> training set of s samples, where:
-    # xj -> a n-dimensional input vector
-    # yj -> desired output value
- 
-# y-hat = w0*x0 + w1*x1 + ... + wm*xm = Sum from j=0 to m xj, wj = w.T * x
-
-# Decision boundary 
-# make function equal to zero
-# everything to the left will be 0
-# everything to the right wil be 1
-
-## Perceptron learning algorithm
-
-# wj = wj + delta-wj
-
-# delta-wj = n(yi - y-hati)xji
-
-# where: 
-    # n -> learning rate
-    # yi -> true class label (or 'target')
-    # y-hat-i -> predicted class label
-    
+## Perceptron ##
 
 ## Implementation:
 import numpy as np
@@ -80,17 +39,36 @@ def fit(X, y, eta=0.01, n_iter=50):
 # create matrix of features
 X = np.array([[11, 21, 33],
               [1, 2, 3],
-              [12, 24, 37]])
+              [12, 24, 37],
+              [1, 2, 3]])
 
 # create targets
-y = np.array([1, -1, 1])
+y = np.array([1, -1, 1, -1])
 
 # fit and predict values
 w, errors = fit(X, y)
 y_pred = predict(X, w)
 print(w, errors, y_pred)
 
-#TODO: compute score/accuracy
-#TODO: implement perceptron with sklearn
-#TODO: pass to jupyte notebook
-#TODO: add theory/explanations
+# plot error curve 
+import matplotlib.pyplot as plt 
+
+def plot_errors(errors):
+    step = np.arange(0, len(errors))
+    fig = plt.figure()
+    ax = plt.axes()
+    ax.plot(step, errors)
+    plt.show()
+
+plot_errors(errors)
+
+# try perceptron with a sklearn dataset
+from sklearn.datasets import load_breast_cancer
+data = load_breast_cancer()
+
+# fit and predict values
+w, errors = fit(data.data, data.target, n_iter=1000)
+y_pred = predict(data.data, w)
+
+print(plot_errors(errors))
+
