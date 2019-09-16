@@ -1,15 +1,14 @@
 # Computational models of cognition and behavior
 
-Theory and implementation of canonical models of cognition and behavior.
-
 ## About
 
-The goal of this project is to implement the algorithms step-by-step to maximize conceptual clarity. Optimized and thoroughly tested implementations of these models can be found elsewhere.  
-Models are implemented as jupyter notebooks. Python scripts are also provided.
+Theory and implementation of canonical models of cognition and behavior.  
+
+The goal of this project is to implement the algorithms step-by-step to maximize conceptual clarity. Optimized and thoroughly tested implementations of these models can be found elsewhere. Models are implemented as jupyter notebooks. Python scripts are also provided.
 
 ## Contents
 
-Potential models to be implemented:
+Potential models to be implemented (models with a check mark, has been implemented)
 
 ### Connectionist models
 
