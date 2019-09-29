@@ -2,27 +2,16 @@
 
 ## About
 
-Theory and implementation of canonical models of cognition and behavior.  
-
-The goal of this project is to implement the algorithms step-by-step to maximize conceptual clarity. Optimized and thoroughly tested implementations of these models can be found elsewhere. Models are implemented as jupyter notebooks. Python scripts are also provided.
+The goal of this project is to implement a selection of **canonical models in cognitive science**. Theoretical and historical remarks are added along with the mathemtical formulation and code implementation. The algorithms follow a step-by-step code implementation with the aim of maximize conceptual clarity. Models are implemented as Jupyter Notebooks.
 
 ## Contents
 
-Potential models to be implemented (models with a check mark, has been implemented)
+Implemented models:
 
-### Connectionist models
+* The Perceptron (Rossenblat, 1958) :heavy_check_mark:
+* The Adaline - Adaptive Linear Neuron (Widrow and Hoff, 1959) :heavy_check_mark:
 
-* Single-layer perceptron :heavy_check_mark:
-* Multi-layer perceptron with non-linear units trained with backpropagation
-* Recurrent neural network
-* Convolutional neural network
-
-### Bayesian models of cognition
-
-* Gaussian-Gaussian process
-* Hierarchical bayesian process
-
-### Reward-based and associative learning models
-
-* Recorla-Wagner delta-rule model
-* Temporal-difference learning
+To do:
+* Multilayer Perceptron Trained with Backpropagation (Rummelhart, Hinton and Williams, 1986)
+* Elman Network - Recurrent Neural Network (Jeffrey Elman, 1990)
+* More to define...
