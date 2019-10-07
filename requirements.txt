@@ -1,2 +1,6 @@
 numpy
 matplotlib
+keras==2.3.0
+scikit-learn==0.21.2
+tensorflow==2.0.0
+
