@@ -41,8 +41,6 @@ Where  $I_1, I_2,..., I_N$ are input values  $\in\{0,1\}$ ;  $W_1, W_2,..., W_N$
 
 
 <center><b>Figure 2</b></center>
-
-
 <img src="/home/pablo/Desktop/projects/comp_models_cog_beh/notebooks/images/linear_threshold_function_crop.svg" style="zoom:60%;" />
 
 
