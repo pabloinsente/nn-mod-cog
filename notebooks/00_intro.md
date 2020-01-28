@@ -1,0 +1,3 @@
+# Introduction to Computational Models of Cognition 
+
+Understanding human cognition and behavior has been the driving force behind over a century of research in cognitive sciences. Mathematical approaches in cognitive sciences date from as early as the 19th century, when researchers like Ernst Heinrich Weber developed mathematical models describing  the process by which humans are able to perceive differences between objects (REF).  More recently, with the advent of theoretical computer science and computers during the 20th century, cognitive scientist have developed mathematical models describing cognition as computational processes, in close resemblance to how computers work (REF). 
