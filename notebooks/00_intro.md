@@ -4,7 +4,7 @@ Understanding human cognition has been one of the main driving forces behind ove
 
 
 
-Nowadays, in the first quarter of the 21st century, the field enjoys a fast-paced growth in a world where nations and tech-giants race to discover the keys to human and artificial intelligence. In this introduction, I offer a brief overview of the history of computational approaches in cognitive science, along with a few thoughts about its importance and unique perspective in the study of human thinking and behavior. I take a historical perspective, focusing on articulating a high-level narrative of the evolution of the field, rather than in the many individual examples of computational models. For a more exhaustive review, refer to the excellent work of Boden (2008a, 2008b).
+Nowadays, in the first quarter of the 21st century, the field enjoys a fast-paced growth in a world where nations and tech-giants race to discover the keys to human and artificial intelligence. In this introduction, I offer a brief overview of the history of computational approaches in cognitive science, along with a few thoughts about its importance and unique perspective in the study of human thinking and behavior. I take a historical perspective, focusing on articulating a high-level narrative of the evolution of the field, rather than in the many individual examples of computational models. For a more exhaustive review, refer to the excellent work of Boden about the subject (2008a, 2008b).
 
 ## The rise, fall, and resurgence of computational cognitive science 
 
@@ -50,11 +50,69 @@ In the early 21st century, the availability of computational resources and data 
 
 How does the computational cognitive science field look today? The truth is that the correlational and lab-based experimental approaches still dominate cognitive psychology as a whole, at least by the numbers. However, it is fair to say that in the last couple of years psychology has witnessed an increasing presence interest in computational models. More articles are published every year at major journals and conferences, and more students are being trained in computational methods than ever before. Cognitive scientists still debate about the merits of connectionist and symbolic approaches, but the landscape seems to be more open, with probabilistic and hybrid approaches joining the conversation. It is also fair to say that the prominence of deep learning in artificial intelligence, has greatly contributed to the cause of connectionism, placing this approach as the center of attention, and making it the one producing the highest volume of research. Yet, as history demonstrates, scientists have been remarkably bad at predicting the future of the field, repeatedly overlooking its limitations and miscalculating its potential.
 
-## Why computational ?
+## What are computational models of cognition? 
+
+To explain what computational models of cognition are, It is useful to state first what they are not: *computational models of cognition are not exact replicas of the human mind*, in the same manner, that city-maps are not exact replicas of real cities. The only way to create an exact map of a city is by rebuilding the city all over again until you get an inch by inch match between the city and your map, point at which the map becomes useless, as famously exposed by Jorge Luis Borges on "Del Rigor de la Ciencia" ("On Exactitude of Science", 1998):
 
 
 
-According to McClelland (REF): "Models are not intended to capture fully the processes they attempt to elucidate. Rather, they are explorations of ideas about the nature of cognitive processes." (p. 11)
+> …In that Empire, the Art of Cartography attained such Perfection that the map of a single Province occupied the entirety of a City, and the map of the Empire, the entirety of a Province. In time, those Unconscionable Maps no longer satisfied, and the Cartographers Guilds struck a Map of the Empire whose size was that of the Empire, and which coincided point for point with it. The following Generations, who were not so fond of the Study of Cartography as their Forebears had been, saw that that vast Map was Useless, and not without some Pitilessness was it, that they delivered it up to the Inclemencies of Sun and Winters. In the Deserts of the West, still today, there are Tattered Ruins of that Map, inhabited by Animals and Beggars; in all the Land there is no other Relic of the Disciplines of Geography. 
+>
+> —Suarez Miranda,Viajes devarones prudentes, Libro IV,Cap. XLV, Lerida, 1658
+
+
+
+Therefore, computational models of cognition are, in a sense, maps of cognition, or more academically, *simplified abstract representation of the mind*. Now, maps can help to understand multiple aspects of a city: the weather, political boundaries, economic regions, roads, topography, etc. Again, the same can be said about models of cognition. Some models help to understand memory, others language production, others visual perception, and so on. True, a model of language production does not need to be computational, it can be stated verbally, or graphically in a diagram. Informally, *to compute* means to take a set of inputs, manipulate those inputs using a set of operations following a sequence of instructions (or algorithm), to then produce an output. From here, we derive that computational models of cognition can be defined as *simplified abstract representations of the mind, that describe how some aspects of the mind process information in an algorithmic fashion, to produce some output* (e.g., language, inference, perception, etc). This is both more convoluted and more humble than "a replica of the mind".
+
+
+
+## What are computational models of cognition good for?
+
+Examining the history of computational models in cognitive science says a lot about the importance of this approach to the study of the mind and behavior. Still, is important to clarify how computational modeling is different from other approaches, and what advantages and disadvantages entail. 
+
+
+
+Any attempt to classify the multiple approaches to the study of cognition and behavior will inevitably misrepresent their "true identity", exaggerating some aspects and neglecting others. Nonetheless, this exercise will help us to illustrate what is unique to computational approaches. Following Cronbach's perspective (1957), the two main traditions in scientific psychology are the *experimental* and the *correlational*. By experimental, he referred to laboratory-based quantitative studies. Today, we may want to add to that tradition any controlled experimental study aimed to establish causation, regardless of the setting. The correlational tradition is a bit fuzzier. About this Cronbach said: "*The correlational method, for its part, can study what man has not learned to control or can never hope to control*" (p. 672), which is a different way to say non-experimental and non-controlled studies, in any setting, using qualitative and quantitative methods. Very broad.
+
+
+
+To begin, it is important to remember that cognition is not something you can directly observe. If we could, the chances are that many of today's challenges and controversies would be solved and that I wouldn't be writing this document. Any research study about cognition, either correlational or experimental, will proceed by measuring behavior, things like reaction time or eye-movements, and then making inferences about cognitive processes. Even if you take the perspective that cognitive processes are *literally* patterns of neural activity in the brain, studying such patterns is very limited in scope, very complicated, and very expensive. Let's say that you want to study language acquisition in early childhood. How would you approach the study of the cognitive processes operating when a child learns language? Techniques like functional magnetic resonance imaging (fMRI) are really hard to perform on children, since requires staying still in a giant noisy tube for an extended period of time. Even if you manage to introduce a child in an fMRI machine and stay still for 20 minutes (as many very clever researchers do), now you have to figure out a task that the child can perform, with some sort of remote control. True, there are some task that can be used with young children, but the question now is *what* and *how much* can you learn from having a child performing one task for 20 min in such setting. You have also to consider the fact that language acquisition is a developmental process, so multiple sessions over an extended period of time are required to gain better insight. Other techniques like electroencephalogram are less invasive and easier to perform on children, but many of the fMRI limitations persist. Does this mean that studies based on measuring behavior and brain activity are useless? Absolutely not. They both have their strengths and weaknesses. Our point was to illustrate that they have many limitations that make desirable to have an additional method to study human cognition.
+
+
+
+Computational modeling has a lot to offer to enhance our understanding of human cognition, as a complement, not a supplement, of behavioral and brain-based studies. I want to highlight the following aspects: *isolation*, *simulation*, *simplification*, *quantification*, *practicality*, and *theory exploration*.
+
+- **Isolation**:  in studies with human subjects, it is really hard to isolate the effect of a specific cognitive process. In correlational studies, this is simply impossible, as anyone trying to account for "confounding" factors have experienced. In experimental studies, you can isolate the "treatment" theoretically impacting a cognitive process, but the process itself. Computational models do allow for such isolation of processes, as the processes are built into the model by the modeler, and can be altered at will without touching other aspects of the model.  
+- **Simulation**: computational models allow answering "what if" questions. What if I accelerate the speed at which the model learns in this particular task? Easy, just increase the "learning rate" parameter. What if I introduce "noise" in the communication among neurons in my neural network? Easy, too, just add some random noise to the weights matrix. Artificially manipulating cognitive processes in humans are possible too, for instance, by using transcranial magnetic stimulation or TMS. Unfortunately, you have little to no control over which processes are affected, unless you use very invasive methods, which usually require brain surgery. Additionally, the results of a simulation can be compared to human data, to further assess the validity of the model.
+- **Simplification**: each element in a computational model needs to be explicitly defined. This fact forces the modeler to carefully select a subset of cognitive mechanisms to be incorporated into the model. As a consequence, the simplification of highly complex and interactive mental processes is achieved. Simplifying a complex system may help to better understand the role of each component. 
+- **Quantification**: by its very nature, computational models allow for fine-grained quantification of the role of each mechanism in a model. This is not unique to computational models, but still is one of its main advantages. 
+- **Practically**: in most instances, computational models require only two things: a computer and a modeler. More complex scenarios may require a cluster of computers and multiple modelers, but still, that is considerably simpler and cheaper, than most experimental psychology protocols, and than most nonscientific protocols. Although having human-generated data is desirable in many instances, this is not strictly required, and even if you use human data, it is common practice to use secondary sources of data (data collected in previous studies, sometimes by other research groups). In many cases, computational models can be tested with synthetic data, or with no data at all.
+- **Theory exploration**: truth to be told, any research approach would allow for theory exploration. However, the computational modeling approach has the advantage of access to secondary data, and synthetic data, lowering the bar for examining the implications of hypothesized cognitive mechanism. In a way, it allows for rapid iteration without having to necessarily design a whole data collection process from scratch every time.  
+
+
+
+## What are the limitations of computational models of cognition?
+
+By now, you may have devised many objections and weaknesses of the computational modeling approach. I'll limit myself to mention a few that are particularly important to mention in my opinion: *oversimplification*, *overcomplexity*, *falsifiability*, and *technical complexity*:
+
+
+
+- **Oversimplification**: this may sound contradicting, because before I highlighted *simplification* as one of the main advantages of computational models. I see simplification as a double-edged sword: on the one hand, it can help to see the bigger picture, but in the other, it can convey a distorted image of a phenomenon, to the point that hinders comprehension rather the enhancing it. 
+- **Overcomplexity**: related to the previous point, I also argued that models help to handle complexity. But they also allow the modeler to make the model as complex as it wants. Very complex, with lots of free parameters, can fit or approximate almost any human-generated data, giving the impression that they are a good representation of the cognitive mechanism at play. This may or may not be the truth, but the issues are that now understanding the model becomes almost impossible.
+- **Falsifiability**: Popper's falsifiability criteria (2005), refers to the idea that for a scientific hypothesis to be valid, it has to be formulated in a manner in which it can be proved wrong. In other words, you have specified in advance what piece of evidence would prove your model wrong. It turns out that proving computational models wrong is quite hard, precisely because you can make it increasingly complex. This does not mean that it is impossible. For example, Palminteri, Wyart, & Koechlin (2017) have proposed utilizing the *generative performance criteria* for model falsification, this is: "*the ability of a given model to generate the data. The generative performance is evaluated by comparing model simulations to the actual data. For this comparison both frequentist and Bayesian statistics can be used*" (p. 426).
+- **Technical complexity**: there is a significant barrier to computational modeling: mathematical and programming skills. Building computational models require a firm understanding of the mathematics involved in the model definition and non-trivial programming skills. Historically, mathematical and computational skills have not been part of the core training of researchers in psychological sciences. If you examine the background of most well-known cognitive modelers, you will find that the vast majority of them had additional training in mathematics and computer science, and some were straight mathematicians or computer scientists. At present, there are reasons to be optimistic, as tools that simplify the building of computational models becomes more available, and computational skills are added to the formative curriculum of young researchers. 
+
+
+
+## Conclusions
+
+Computational models of cognition have a long tradition that began in the first half of the 20th century, as a blend of computational theory and cognitive psychology. Since, four major approaches have emerged within this perspective: symbolic-based models, connectionist-based models, hybrids of connectionist and symbolic models, and the probability-based models. The computational approach has arguably contributed to improve and expand our understanding of human cognition and behavior. Among its many strengths, we have identified: isolating mechanism, simulation studies, simplification of complex systems, quantification of mechanism, practicality, and ease of theory exploration. Among its weaknesses, we have mentioned: oversimplification, overcomplexity, the difficulty of falsification, and technical complexity of implementation. In our perspective, recent advances in computation and data availability, along with the public and private of developing artificial intelligence technologies, provide a fertile context for the growth and consolidation of the computational perspective in cognitive science.  
+
+
+
+In the next sections, I provide a series of tutorials covering the theory, mathematical background, code implementation, and application, of canonical models in the connectionist tradition of cognitive modeling.
+
+
 
 ## References
 
@@ -63,6 +121,8 @@ According to McClelland (REF): "Models are not intended to capture fully the pro
 Boden, M. A. (2008a). *Mind as Machine: A History of Cognitive Science*. Clarendon Press.
 
 Boden, M. A. (2008b). An Evaluation of Computational Modeling in Cognitive Science. In *The Cambridge Handbook of Computational Psychology* (pp. 667–683). Cambridge University Press.
+
+Borges, J. L., Hurley, A., & Hurley, A. (1998). *Collected fictions*. Penguin Books New York.
 
 Chater, N., Tenenbaum, J. B., & Yuille, A. (2006). Probabilistic models of cognition: Conceptual foundations. *Trends in Cognitive Sciences*, *10*(7), 287–291. https://doi.org/10.1016/j.tics.2006.05.007
 
@@ -90,7 +150,11 @@ Newell, A., Shaw, J. C., & Simon, H. A. (1959). *Report on a general problem sol
 
 Lansman, M., & Hunt, E. (1981). *Proceedings of the Lake Wilderness Attention Conference. Interim Technical Report, August 1, 1980 through September 30, 1980.*
 
+Palminteri, S., Wyart, V., & Koechlin, E. (2017). The Importance of Falsification in Computational Cognitive Modeling. *Trends in Cognitive Sciences*, *21*(6), 425–433. https://doi.org/10.1016/j.tics.2017.03.011
+
 Pearl, J. (1988). *Probabilistic reasoning in intelligent systems: Networks of plausible inference*. Morgan-Kaufman.
+
+Popper, K. (2005). *The logic of scientific discovery*. Routledge.
 
 Raymond, F., & Rutherford, A. (2012). The Sensing and Perceiving Mind. In *Pioneers of Psychology: A History* (Fourth ed). Norton.
 
