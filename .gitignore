@@ -125,3 +125,6 @@ dmypy.json
 
 #ignore papers
 /references
+
+# anything ending with .swp
+*.swp

@@ -43,7 +43,8 @@ Moravec, H. (1998). When will computer hardware match the human brain? *Journal 
 
 A single neuron, with a single layer, and no learning procedures definitively leaves a lot of space for improvement, considering that the human brain has  over 86 billion of neurons hierarchically organized into multiple layers of very complex connectivity patterns (Azevedo et al., 2009). 
 
-
+Rosenblatt: 
+"..the perceptron program is not primarily concerned with the invention of devices for "artificial intelligence", but rather with investigating the physical structures and neurodynamic principles which underlie "natural intelligence". A perceptron is first: and foremost a brain model, not an invention for pattern recognition." (p. vii-viii) / Neurodynamics book
 
 that takes binary inputs, 
 
