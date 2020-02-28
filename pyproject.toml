@@ -14,6 +14,8 @@ pandas = "0.25.2"
 jupyterlab = "1.2.5"
 keras = "2.3.1"
 scikit-learn = "^0.22.1"
+altair_saver = "^0.1.0"
+selenium = "^3.141.0"
 
 [tool.poetry.dev-dependencies]
 
