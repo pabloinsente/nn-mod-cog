@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="weight-update.svg">
+   sodipodi:docname="weight-update.svg"
+   inkscape:export-filename="/home/pablo/Desktop/projects/nn-mod-cog/notebooks/images/adaline/weight-updatepng.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,7 +27,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="302.0936"
+     inkscape:cx="138.16503"
      inkscape:cy="145.019"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
