@@ -1438,6 +1438,216 @@ function main() {
   } catch (e) {
     console.error(e);
   }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('@karosc/jupyterlab_dracula')) {
+      disabled.matches.push('@karosc/jupyterlab_dracula');
+    } else {
+      extMod = require('@karosc/jupyterlab_dracula/');
+      extension = extMod.default;
+
+      // Handle CommonJS exports.
+      if (!extMod.hasOwnProperty('__esModule')) {
+        extension = extMod;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('@yeebc/jupyterlab_neon_theme')) {
+      disabled.matches.push('@yeebc/jupyterlab_neon_theme');
+    } else {
+      extMod = require('@yeebc/jupyterlab_neon_theme/');
+      extension = extMod.default;
+
+      // Handle CommonJS exports.
+      if (!extMod.hasOwnProperty('__esModule')) {
+        extension = extMod;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('jupyterlab-openbayes-theme')) {
+      disabled.matches.push('jupyterlab-openbayes-theme');
+    } else {
+      extMod = require('jupyterlab-openbayes-theme/');
+      extension = extMod.default;
+
+      // Handle CommonJS exports.
+      if (!extMod.hasOwnProperty('__esModule')) {
+        extension = extMod;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('jupyterlab-custom-theme')) {
+      disabled.matches.push('jupyterlab-custom-theme');
+    } else {
+      extMod = require('jupyterlab-custom-theme/');
+      extension = extMod.default;
+
+      // Handle CommonJS exports.
+      if (!extMod.hasOwnProperty('__esModule')) {
+        extension = extMod;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('@genepattern/genepattern-theme-extension')) {
+      disabled.matches.push('@genepattern/genepattern-theme-extension');
+    } else {
+      extMod = require('@genepattern/genepattern-theme-extension/');
+      extension = extMod.default;
+
+      // Handle CommonJS exports.
+      if (!extMod.hasOwnProperty('__esModule')) {
+        extension = extMod;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('jupyterlab-tailwind-theme')) {
+      disabled.matches.push('jupyterlab-tailwind-theme');
+    } else {
+      extMod = require('jupyterlab-tailwind-theme/');
+      extension = extMod.default;
+
+      // Handle CommonJS exports.
+      if (!extMod.hasOwnProperty('__esModule')) {
+        extension = extMod;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
 
   var lab = new JupyterLab({
     mimeExtensions: mimeExtensions,

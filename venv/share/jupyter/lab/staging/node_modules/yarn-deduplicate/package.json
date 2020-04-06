@@ -1,0 +1,52 @@
+{
+  "name": "yarn-deduplicate",
+  "version": "1.1.1",
+  "bin": "./cli.js",
+  "description": "Deduplication tool for yarn.lock files",
+  "keywords": [
+    "yarn",
+    "yarn.lock",
+    "lockfile",
+    "duplicated",
+    "package manager",
+    "dedupe",
+    "deduplicate"
+  ],
+  "scripts": {
+    "test": "eslint . && jest",
+    "lint": "eslint ."
+  },
+  "homepage": "https://github.com/atlassian/yarn-deduplicate#readme",
+  "bugs": "https://github.com/atlassian/yarn-deduplicate/issues",
+  "license": "Apache-2.0",
+  "author": "Sergio Cinos <scinos@atlassian.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:atlassian/yarn-deduplicate.git"
+  },
+  "engines": {
+    "node": ">=6",
+    "yarn": "^1.0.0"
+  },
+  "dependencies": {
+    "@yarnpkg/lockfile": "^1.1.0",
+    "commander": "^2.10.0",
+    "semver": "^5.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^21.2.1",
+    "outdent": "^0.5.0",
+    "prettier": "^1.15.3"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules",
+      "<rootDir>/.history"
+    ]
+  }
+}

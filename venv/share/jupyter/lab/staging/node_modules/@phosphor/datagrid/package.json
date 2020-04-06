@@ -1,0 +1,51 @@
+{
+  "name": "@phosphor/datagrid",
+  "version": "0.1.11",
+  "description": "PhosphorJS - Tabular Data Grid",
+  "homepage": "https://github.com/phosphorjs/phosphor",
+  "bugs": {
+    "url": "https://github.com/phosphorjs/phosphor/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "S. Chris Colbert <sccolbert@gmail.com>",
+  "contributors": [
+    "A. Darian <git@darian.af>",
+    "S. Chris Colbert <sccolbert@gmail.com>",
+    "Steven Silvester <steven.silvester@gmail.com>"
+  ],
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phosphorjs/phosphor.git"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rimraf lib",
+    "docs": "typedoc --options tdoptions.json src",
+    "watch": "tsc --build --watch"
+  },
+  "dependencies": {
+    "@phosphor/algorithm": "^1.2.0",
+    "@phosphor/coreutils": "^1.3.1",
+    "@phosphor/disposable": "^1.3.0",
+    "@phosphor/domutils": "^1.1.3",
+    "@phosphor/dragdrop": "^1.4.0",
+    "@phosphor/messaging": "^1.3.0",
+    "@phosphor/signaling": "^1.3.0",
+    "@phosphor/widgets": "^1.9.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.2",
+    "typedoc": "~0.12.0",
+    "typescript": "~3.0.3"
+  },
+  "gitHead": "7fdcefb4740fbd459c4f25b3c0b8641f94614de0"
+}

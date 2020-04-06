@@ -1,0 +1,201 @@
+/*-----------------------------------------------------------------------------
+| Copyright (c) OpenBayes.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
+/* NOTE: This file is pending deprecated in JupyterLab 2.0.0 */
+
+:root {
+
+  /* Copied from openbayes console native variables */
+
+  /* Color - text color */
+  --text-color-h: 238;
+  --text-color-s: 71%;
+  --text-color-l: 11%;
+  --text-color-hsl: var(--text-color-h), var(--text-color-s), var(--text-color-l);
+
+  --text-color: hsl(var(--text-color-hsl));
+  --text-color-0: hsla(var(--text-color-hsl), 0);
+  --text-color-3: hsla(var(--text-color-hsl), .03);
+  --text-color-5: hsla(var(--text-color-hsl), .05);
+  --text-color-7: hsla(var(--text-color-hsl), .07);
+  --text-color-10: hsla(var(--text-color-hsl), .1);
+  --text-color-20: hsla(var(--text-color-hsl), .2);
+  --text-color-30: hsla(var(--text-color-hsl), .3);
+  --text-color-40: hsla(var(--text-color-hsl), .4);
+  --text-color-50: hsla(var(--text-color-hsl), .5);
+  --text-color-60: hsla(var(--text-color-hsl), .6);
+  --text-color-70: hsla(var(--text-color-hsl), .7);
+  --text-color-80: hsla(var(--text-color-hsl), .8);
+  --text-color-90: hsla(var(--text-color-hsl), .9);
+  --text-color-light: hsl(var(--text-color-h), var(--text-color-s), calc(var(--text-color-l) / .9));
+  --text-color-dark: hsl(var(--text-color-h), var(--text-color-s), calc(var(--text-color-l) * .9));
+
+  /* Color - link color */
+  --link-color-h: 211;
+  --link-color-s: 100%;
+  --link-color-l: 50%;
+  --link-color-hsl: var(--link-color-h), var(--link-color-s), var(--link-color-l);
+
+  --link-color: hsl(var(--link-color-hsl));
+  --link-color-0: hsla(var(--link-color-hsl), 0);
+  --link-color-3: hsla(var(--link-color-hsl), .03);
+  --link-color-5: hsla(var(--link-color-hsl), .05);
+  --link-color-7: hsla(var(--link-color-hsl), .07);
+  --link-color-10: hsla(var(--link-color-hsl), .1);
+  --link-color-20: hsla(var(--link-color-hsl), .2);
+  --link-color-30: hsla(var(--link-color-hsl), .3);
+  --link-color-40: hsla(var(--link-color-hsl), .4);
+  --link-color-50: hsla(var(--link-color-hsl), .5);
+  --link-color-60: hsla(var(--link-color-hsl), .6);
+  --link-color-70: hsla(var(--link-color-hsl), .7);
+  --link-color-80: hsla(var(--link-color-hsl), .8);
+  --link-color-90: hsla(var(--link-color-hsl), .9);
+  --link-color-light: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) / .9));
+  --link-color-dark: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) * .9));
+
+  /* Color - background color */
+  --bg-color-h: 0;
+  --bg-color-s: 0%;
+  --bg-color-l: 100%;
+  --bg-color-hsl: var(--bg-color-h), var(--bg-color-s), var(--bg-color-l);
+
+  --bg-color: hsl(var(--bg-color-hsl));
+  --bg-color-0: hsla(var(--bg-color-hsl), 0);
+  --bg-color-3: hsla(var(--bg-color-hsl), .03);
+  --bg-color-5: hsla(var(--bg-color-hsl), .05);
+  --bg-color-7: hsla(var(--bg-color-hsl), .07);
+  --bg-color-10: hsla(var(--bg-color-hsl), .1);
+  --bg-color-20: hsla(var(--bg-color-hsl), .2);
+  --bg-color-30: hsla(var(--bg-color-hsl), .3);
+  --bg-color-40: hsla(var(--bg-color-hsl), .4);
+  --bg-color-50: hsla(var(--bg-color-hsl), .5);
+  --bg-color-60: hsla(var(--bg-color-hsl), .6);
+  --bg-color-70: hsla(var(--bg-color-hsl), .7);
+  --bg-color-80: hsla(var(--bg-color-hsl), .8);
+  --bg-color-90: hsla(var(--bg-color-hsl), .9);
+  --bg-color-light: hsl(var(--bg-color-h), var(--bg-color-s), calc(var(--bg-color-l) / .9));
+  --bg-color-dark: hsl(var(--bg-color-h), var(--bg-color-s), calc(var(--bg-color-l) * .9));
+
+  /* Color - code color, an inverted demo from link-color */
+  --code-color-h: calc(var(--link-color-h) + 170);
+  --code-color-s: calc(var(--link-color-s) * .6);
+  --code-color-l: var(--link-color-l);
+  --code-color-hsl: var(--code-color-h), var(--code-color-s), var(--code-color-l);
+
+  --code-color: hsl(var(--code-color-hsl));
+  --code-color-0: hsla(var(--code-color-hsl), 0);
+  --code-color-3: hsla(var(--code-color-hsl), .03);
+  --code-color-5: hsla(var(--code-color-hsl), .05);
+  --code-color-7: hsla(var(--code-color-hsl), .07);
+  --code-color-10: hsla(var(--code-color-hsl), .1);
+  --code-color-20: hsla(var(--code-color-hsl), .2);
+  --code-color-30: hsla(var(--code-color-hsl), .3);
+  --code-color-40: hsla(var(--code-color-hsl), .4);
+  --code-color-50: hsla(var(--code-color-hsl), .5);
+  --code-color-60: hsla(var(--code-color-hsl), .6);
+  --code-color-70: hsla(var(--code-color-hsl), .7);
+  --code-color-80: hsla(var(--code-color-hsl), .8);
+  --code-color-90: hsla(var(--code-color-hsl), .9);
+  --code-color-light: hsl(var(--code-color-h), var(--code-color-s), calc(var(--code-color-l) / .9));
+  --code-color-dark: hsl(var(--code-color-h), var(--code-color-s), calc(var(--code-color-l) * .9));
+
+  /* Bootstrap variables overrides */
+  --blue: var(--link-color);
+  --indigo: #6610f2;
+  --purple: #9b51e0;
+  --pink: #e051c8;
+  --red: #eb5757;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #27ae60;
+  --teal: #20c997;
+  --cyan: #56ccf2;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: var(--link-color);
+  --secondary: var(--gray);
+  --success: var(--green);
+  --info: var(--cyan);
+  --warning: var(--yellow);
+  --danger: var(--red);
+  --light: #f8f9fa;
+  --dark: var(--gray-dark);
+
+  /* Color variants/variable mappings (based on our main color scheme) */
+  --body-color-opaque: #f2f2f4;
+  --border-color: var(--text-color-10);
+  --code-bg-color: var(--code-color-10);
+  --logo-color-back: var(--link-color);
+  --logo-color-front: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) + 10%));
+}
+
+/* Dark theme support, that's all we need */
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    /* Basis */
+    --text-color-h: 213;
+    --text-color-s: 32%;
+    --text-color-l: 70%;
+
+    --link-color-h: 202;
+    --link-color-s: 100%;
+    --link-color-l: 60%;
+
+    --bg-color-h: 220;
+    --bg-color-s: 10%;
+    --bg-color-l: 16%;
+
+    --code-color-s: calc(var(--link-color-s) * .95);
+    --code-color-l: calc(var(--link-color-l) * 1.4);
+
+    /* Variants */
+    --body-color-opaque: hsl(220, 10%, 12%);
+  }
+}
+
+/* Override Jupyter styling */
+:root {
+  --jp-layout-color0: var(--bg-color);
+
+  --jp-ui-font-color0: hsla(var(--text-color-hsl), 1);
+  --jp-ui-font-color1: hsla(var(--text-color-hsl), .87);
+  --jp-ui-font-color2: hsla(var(--text-color-hsl), .54);
+  --jp-ui-font-color3: hsla(var(--text-color-hsl), .38);
+
+  --jp-content-font-color0: hsla(var(--text-color-hsl), 1);
+  --jp-content-font-color1: hsla(var(--text-color-hsl), 1);
+  --jp-content-font-color2: hsla(var(--text-color-hsl), .7);
+  --jp-content-font-color3: hsla(var(--text-color-hsl), .5);
+
+  /* Translucent color doesn't work, I need opaque colors with different lightness */
+  --md-grey-50: hsl(var(--bg-color-h), var(--bg-color-s), 10%);
+  --md-grey-100: hsl(var(--bg-color-h), var(--bg-color-s), 20%);
+  --md-grey-200: hsl(var(--bg-color-h), var(--bg-color-s), 30%);
+  --md-grey-300: hsl(var(--bg-color-h), var(--bg-color-s), 40%);
+  --md-grey-400: hsl(var(--bg-color-h), var(--bg-color-s), 50%);
+  --md-grey-500: hsl(var(--bg-color-h), var(--bg-color-s), 60%);
+  --md-grey-600: hsl(var(--bg-color-h), var(--bg-color-s), 70%);
+  --md-grey-700: hsl(var(--bg-color-h), var(--bg-color-s), 80%);
+  --md-grey-800: hsl(var(--bg-color-h), var(--bg-color-s), 90%);
+  --md-grey-900: hsl(var(--bg-color-h), var(--bg-color-s), 95%);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --md-grey-50: hsl(var(--bg-color-h), var(--bg-color-s), 95%);
+    --md-grey-100: hsl(var(--bg-color-h), var(--bg-color-s), 90%);
+    --md-grey-200: hsl(var(--bg-color-h), var(--bg-color-s), 80%);
+    --md-grey-300: hsl(var(--bg-color-h), var(--bg-color-s), 70%);
+    --md-grey-400: hsl(var(--bg-color-h), var(--bg-color-s), 60%);
+    --md-grey-500: hsl(var(--bg-color-h), var(--bg-color-s), 50%);
+    --md-grey-600: hsl(var(--bg-color-h), var(--bg-color-s), 40%);
+    --md-grey-700: hsl(var(--bg-color-h), var(--bg-color-s), 30%);
+    --md-grey-800: hsl(var(--bg-color-h), var(--bg-color-s), 20%);
+    --md-grey-900: hsl(var(--bg-color-h), var(--bg-color-s), 10%);
+  }
+}

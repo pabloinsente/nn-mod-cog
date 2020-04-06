@@ -1,0 +1,38 @@
+{
+  "name": "blacklist",
+  "version": "1.1.4",
+  "description": "Returns a shallow copy of an object without blacklisted properties",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcousens/blacklist.git"
+  },
+  "homepage": "https://github.com/dcousens/blacklist",
+  "bugs": {
+    "url": "https://github.com/dcousens/blacklist/issues"
+  },
+  "scripts": {
+    "prebuild": "mkdir -p dist",
+    "build": "umd --commonJS blacklist index.js dist/blacklist.js",
+    "postbuild": "uglifyjs dist/blacklist.js > dist/blacklist.min.js",
+    "prepublish": "npm run build",
+    "standard": "standard",
+    "unit": "faucet",
+    "test": "npm run standard && npm run unit"
+  },
+  "keywords": [
+    "blacklist",
+    "filter",
+    "object",
+    "utility"
+  ],
+  "author": "Daniel Cousens",
+  "license": "MIT",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "standard": "^7.1.2",
+    "tape": "^4.6.0",
+    "uglify-js": "^2.6.1",
+    "umd": "^3.0.1"
+  }
+}
