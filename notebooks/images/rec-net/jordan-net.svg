@@ -26,16 +26,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="464.5358"
-     inkscape:cy="301.18051"
+     inkscape:zoom="1.4"
+     inkscape:cx="477.5933"
+     inkscape:cy="347.03501"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1600"
-     inkscape:window-height="870"
-     inkscape:window-x="1600"
-     inkscape:window-y="0"
+     inkscape:window-height="768"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
      inkscape:window-maximized="1"
      inkscape:snap-global="false" />
   <defs
@@ -263,7 +263,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -487,7 +487,7 @@
          y="186.04559"
          x="25.475481"
          id="tspan2033-5"
-         sodipodi:role="line">outout </tspan><tspan
+         sodipodi:role="line">output </tspan><tspan
          id="tspan2037-9"
          style="font-size:4.23333311px;line-height:1;text-align:center;text-anchor:middle;fill:#ff5555;stroke-width:0.26458332"
          y="190.27893"
@@ -632,7 +632,7 @@
          y="186.04559"
          x="162.14496"
          id="tspan2033-5-1"
-         sodipodi:role="line">outout </tspan><tspan
+         sodipodi:role="line">output </tspan><tspan
          id="tspan2037-9-2"
          style="font-size:4.23333311px;line-height:1;text-align:center;text-anchor:middle;fill:#ff5555;stroke-width:0.26458332"
          y="190.27893"
@@ -837,7 +837,7 @@
          y="186.04559"
          x="106.09761"
          id="tspan2033-5-8"
-         sodipodi:role="line">outout </tspan><tspan
+         sodipodi:role="line">output </tspan><tspan
          id="tspan2037-9-84"
          style="font-size:4.23333311px;line-height:1;text-align:center;text-anchor:middle;fill:#ff5555;stroke-width:0.26458332"
          y="190.27893"
