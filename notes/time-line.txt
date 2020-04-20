@@ -1,0 +1,16 @@
+- 1937: Turing machines 
+- 1942: McCulloch and Pitts Neuron
+- 1958: Rosenblatt's Perceptron
+- 1960: Widrow's and Hoff's ADALINE
+- 1962: Huebel and Wisel experiments
+- 1969: Minsky's and Papert's Perceptron Book
+- 1980: Fukushima's Neocognitron
+- 1982: Hopfield's Network 
+- 1986: PDP book is published
+- 1986: Jordan's Network for sequence-learning
+- 1986: Rumelhart, Hinton, and Williams Multilayer Perceptron trained with Backpropagation
+- 1989: Yann LeCun's Convolutional Neural Network
+- 1990: Jeffrey Elman's Recurrent Neural Network
+- 1997: Hochreiter's and Schmidhuber's LSTM units
+- 1998: LeCun et al LeNet-5  
+- 2012: Krizhevsky et al AlexNet

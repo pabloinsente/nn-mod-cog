@@ -3,36 +3,26 @@
 
 In the introductory chapter, I mentioned connectionist models as one of the main approaches in the computational cognitive modeling landscape. This e-book is precisely about this approach to cognition. In this section I provide a briefly expand on this perspective, and layout a "roadmap" to what comes next in this series.  In particular, this roadmap will help you to understand why we selected these models, why are important to the field, and how they connect to each other from an historical and technical perspective.
 
+There are multiple ways to characterize neural network models. We will cover all the major architectural design traits of each model, like activations functions and learning procedure, but paying particular attention to what was novel or unique about them at the time they were introduced to the field. Keep in mind this is not a comprehensive review, that is left for each chapter, and some concepts may be obscure at this point. Everything will be explained at length later.
 
-
-There are multiple ways to characterize neural network models. We will cover all the major architectural design traits of each model, like activations functions and learning procedure, but paying particular attention to what was novel or unique about them at the time they were introduced to the field. Keep in mind this is not a comprehensive review, that is left for each chapter, and some concepts may be obscure at this point. Everything will be explained at length later. 
+<img
+src="./images/roadmap/roadmap.svg">
 
  **Table 1** summarize the main characteristics that we will reference in this roadmap.
-
-
 
 | Model                 | Number of neurons | Number of layers | Type of Inputs | Type of Outputs | Learning procedure | Differentiable | Activation function   | Domain                      |
 | --------------------- | ----------------- | ---------------- | -------------- | --------------- | ------------------ | -------------- | --------------------- | :-------------------------- |
 | McCulloch-Pitts       | Single neuron     | Single layer     | Binary         | Binary          | None               | No             | Step                  | Logic                       |
-| Perceptron            | Multiple neurons  | Single layer     | **Real value** | Binary?         | **Delta rule**     | No             | Linear                | Perception?                 |
+| Perceptron            | Multiple neurons  | Single layer     | **Real value** | Binary         | **Delta rule**     | No             | Linear                | Perception?                 |
 | Adaline               | Multiple neurons  | Single layer     | Real value     | Real value      | Backpropagation    | No             | Linear                | ?                           |
 | Multilayer Perceptron | Multiple neurons  | Multiple layers  | Real value     | Real value      | Backpropagation    | Yes            | Linear and Non-linear | ?                           |
 | Elman Network         | Multiple neurons  | Multiple layers  | Real value     | Real value      | Backpropagation    | Yes            | Linear and Non-linear | Language, time-dependencies |
 | Convolutional Network | Multiple neurons  | Multiple layers  | Real value     | Real value      | Backpropagation    | Yes            | Linear and Non-linear | Vision                      |
 |                       |                   |                  |                |                 |                    |                | ?                     | Reward-based learning       |
 
-
-
 ## The McCulloch-Pitts artificial neuron: single neurons and logic gates
 
 We begin the journey with the McCulloch-Pitts artificial neuron (McCulloch & Pitts, 1943), with is probably the first published neuron-based model of cognition. This model was extremely simple in its architecture, which is perfect as building block for more complex models: a single neuron, with a single layer, where each input has a single link to the output. Only binary inputs and binary outputs are allowed. No learning algorithm was implemented, which means that the problem solution has to be figured out by the modeler. As binary systems, the application domain was essentially restricted to logic, although you can easily envision other applications with binary input-output relationships. All thing considered, McCulloch and Pitts planted the seeds for the future development of the field.  
-
-**Figure 1** displays a graphical representation of the model. 
-
-<center> Figure 1: McCulloch-Pitts Artificial Neuron </center>
-![](images/mp-neuron-concept.svg)
-
-
 
 ## The Perceptron: multiple neurons and learning
 
@@ -40,15 +30,11 @@ A single neuron architecture with no learning procedures as the McCulloch-Pitts 
 
 Frank Rosenblatt's (1958) introduced the so-called "Perceptron" in 1958. The Perceptron incorporated multiple neurons, with complex connectivity patterns, and the ability to process both binary and real-valued inputs. It was also closely inspired by the scientific knowledge about neuroscience from the time.
 
-Arguably, the most important innovation was the introduction a **learning procedure**: delta rule learning or "error-corrective learning" (Rosenblatt, 1961). Having a learning procedure completely changes the nature of the system from one based on explicit human design to one based on self-organization principles. This was a big leap forward from the perspective of modeling cognitive systems, which as we know have the capacity to learn via environmental feedback. 
-
-
+Arguably, the most important innovation was the introduction a **learning procedure**: delta rule learning or "error-corrective learning" (Rosenblatt, 1961). Having a learning procedure completely changes the nature of the system from one based on explicit human design to one based on self-organization principles. This was a big leap forward from the perspective of modeling cognitive systems, which as we know have the capacity to learn via environmental feedback.
 
 ## The Adaline: linear functions and gradient based learning
 
 The Perceptron introduced learning into neural networks, yet, the learning procedure wasn't efficient from a computational perspective.  The binary threshold function utilized by the Perceptron function was not differentiable, which restricted the possibility to use optimization techniques to make learning faster and more efficient. Bernard Widrow and Ted Hoff introduced the ADALINE (Adaptive Linear Neuron) architecture in 1960, which wasn't that different from the Perceptron but in one key aspects: the **output function is linear** (instead of a threshold), which means it's differentiable. A differentiable output function allows for training via minimizing some global measure of error, like the Mean Squared Error. Such minimization process can be done pretty efficiently by using the **chain-rules of calculus**, which significantly improves learning speed. It also served as a proof of concept of the idea of training neural nets with gradient descent rather than simply error-correction. Finally, note that the ADALINE did used a threshold function for classification problems at the end, but such a function does not have any role in the training processes.
-
-
 
 ## The Multilayer Perceptron: non-linear units and backpropagation
 
@@ -56,19 +42,13 @@ Both the Perceptron and the ADALINE have one major flaw as model of cognition: t
 
 The Multilayer Perceptron impact was so profound that started a whole new wave of research of neural networks that would lead to even more impressive advances in later years.
 
-
-
-## Convolutional Neural Network: convolutions, pooling, and images
+## The Convolutional Neural Network: convolutions, pooling, and images
 
 Vision is among those human capacities that "feel" easy and automatic, but that has proved to be incredible challenging to tackle from a computational modeling perspective. In principle, Multilayer Perceptrons can be used for vision tasks, yet (as will see later) their architecture does not take advantage of the locality of the spacial information encoded in grid-like structure like images. One of the first complex architectures to introduce a series of innovation facilitating learning in vision tasks was the so-called Neocognitron, introduced by Kunihiko Fukushima (1980) in the early '80s. The key innovations where the ideas of simple and complex cells, also known as convolution and pooling respectively. These two operations where inspired in the findings of Hubel and Wisel (1962) about the mammalian visual cortex. Its combination does allow to exploit the locality of information in grid-like structure, and to reduce the computational requirements to compute hierarchical representations of visual features. Later, Yann Lecun (1989) would expand on Fukushima's work introducing the **LeNet**,  which on top of the convolution and polling operations, utilized the backpropagation algorithm for training, which wasn't a widely known training technique when Fukushima worked on the Neocognitron. Since then Convolutional neural networks have been very successful addressing a wide variety of task on vision-related problems.
 
-
-
-## Recurrent neural networks: recurrences and sequence-modeling
+## The Recurrent neural network: recurrences and sequence-modeling
 
 Multilayer Perceptron proved to be able to tackle a wide variety of problem. Yet, in most cases the sequential nature of the data was ignored or avoided. This means that no reference to past states in the network was added to the architectures, even when past states are critical in many problems like language production, planning, and decision-making. In short, they **lacked memory**. Jeffrey Elman (1990) introduced the idea of adding recurrences in neural network models of language in 1990, this is, "loops" that effectively granted **memory** to networks. This wasn't entirely an original idea since John Hopfield (1982) and Michael I. Jordan (1986) implemented the idea of recurrences before than Elman did. Still, Elman works had a great impact as it showed how a self-referencing neural network could learn a series of time-dependent properties in language (1990). As the community experimented with Recurrent Networks, they realized that training such networks was hard, in particular, learning long-term dependencies (Bengio et al, 1994). Thus, the next big step came when Hochreiter & Schmidhuber (1997) introduced an architecture capable to address long-term dependencies, the so-called Long Short-Term Memory Unit (LSTM). Since LSTM, recurrent nets have been used to tackle a wide variety of problems in machine learning and cognitive science. 
-
-
 
 ## References
 
@@ -109,4 +89,3 @@ Multilayer Perceptron proved to be able to tackle a wide variety of problem. Yet
 - Werbos, P. J. (1994). The roots of backpropagation: From ordered derivatives to neural networks and political forecasting (Vol. 1). John Wiley & Sons.
 
 - Widrow, B., & Hoff, M. E. (1960). Adaptive switching circuits (No. TR-1553-1). Stanford Univ Ca Stanford Electronics Labs.
-
