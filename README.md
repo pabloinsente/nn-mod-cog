@@ -36,7 +36,8 @@ To set up your machine,  you first need this dependencies:
 
 ### Remote
 
-Click in the `binder` icon 
+Click in the ```binder``` icon -> [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pabloinsente/nn-mod-cog/5c873cbbe08443ea37e81e1e40bfe78a68f14db5/?urlpath=lab)
+
 
 ### Locally
 
