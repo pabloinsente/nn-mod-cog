@@ -2,7 +2,7 @@ altair==4.0.1
 numpy==1.18.1
 pandas==0.25.2
 jupyterlab==1.2.5
-tensorflow==2.0.1
+tensorflow==2.0.3
 keras==2.3.1
 plotly==4.5.4
 matplotlib==3.2.1
