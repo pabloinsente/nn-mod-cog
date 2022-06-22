@@ -1,5 +1,5 @@
 altair==4.0.1
-numpy==1.18.1
+numpy==1.22.0
 pandas==0.25.2
 jupyterlab==1.2.5
 tensorflow==2.0.1
